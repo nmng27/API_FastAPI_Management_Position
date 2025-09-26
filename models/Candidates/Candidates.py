@@ -8,3 +8,11 @@ class Candidate(BaseModel):
     age:int
     approved:bool
     position_id:int
+
+class CandidateCreate(BaseModel):
+    name:str
+    mail:EmailStr
+    phone:str
+    age:int
+    approved:bool
+    position_id:int

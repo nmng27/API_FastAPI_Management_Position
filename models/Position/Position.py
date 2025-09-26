@@ -13,10 +13,21 @@ class Seniority(BaseModel):
 class Position(BaseModel):
     id:int
     name:str
+    seniority:Seniority
     date_created:date
     is_finished:bool
     customer_id:int
 
 class TechnologyPosition(BaseModel):
     id:int
+    technology:str
+
+class PositionCreate(BaseModel):
+    name:str
+    seniority:Seniority
+    date_created:date
+    is_finished:bool
+    customer_id:int
+
+class TechnologyPosition(BaseModel):
     technology:str

@@ -14,3 +14,10 @@ class User(BaseModel):
     date_birth:date
     role:Role
     passwordWithHash:str
+
+class UserCreate(BaseModel):
+    name:str
+    email:str
+    date_birth:date
+    role:Role
+    passwordWithHash:str
