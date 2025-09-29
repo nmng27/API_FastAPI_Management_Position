@@ -21,6 +21,7 @@ class Position(BaseModel):
 class TechnologyPosition(BaseModel):
     id:int
     technology:str
+    position_id:int
 
 class PositionCreate(BaseModel):
     name:str
@@ -29,5 +30,6 @@ class PositionCreate(BaseModel):
     is_finished:bool
     customer_id:int
 
-class TechnologyPosition(BaseModel):
+class TechnologyPositionCreate(BaseModel):
     technology:str
+    position_id:int
